@@ -16,7 +16,7 @@ stock = {'8475HD': [387990,10], '2175HD': [327990,4], 'JjfFHD': [424990,1],
 
 
 def stock_marca(marca):
-    total_stock = sum(stock[modelo][1] for modelo in productos if productos[modelo][0] == marca)
+    total_stock = sum(stock[modelo][1] for modelo in productos if productos[modelo][0].lower() == marca)
     print(f"El stock es de {total_stock}")
 
 
